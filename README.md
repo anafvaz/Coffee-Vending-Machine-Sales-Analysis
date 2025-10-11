@@ -72,6 +72,12 @@ Expanding to similar locations or replicating the product mix in other machines 
 - Top 10 customers represent a large share of revenue.
 - Monthly revenue peaks in colder months, showing seasonality.
 
+## Tableau Dashboard
+The dashboard visualizes sales trends, peak hours, top products and revenue by month. It helps quickly identify patterns and support business decisions. 
+https://public.tableau.com/app/profile/ana.vaz7019/viz/CofeeMachineAnalysis/Dashboard1
+
+<img width="2838" height="1406" alt="Dashboard 1 (1)" src="https://github.com/user-attachments/assets/10e31023-8617-4952-840d-01d4ab63fa3c" />
+
 ## Tools & Technologies
 - SQL: PostgreSQL for data analysis and querying
 - Tableau: Data visualization and dashboard creation
