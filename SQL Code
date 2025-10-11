@@ -1,0 +1,89 @@
+SELECT * 
+FROM coffee_sales 
+LIMIT 10;
+
+SELECT *
+FROM coffee_sales
+WHERE datetime  IS NULL
+   OR date IS null
+   or card is null
+   or money is null
+   or coffee_name is null
+   OR cash_type  IS null;
+
+SELECT *
+FROM coffee_sales
+WHERE datetime = ''
+   OR date = ''
+   OR card = ''
+   OR coffee_name = ''
+   OR cash_type = '';
+
+SELECT SUM(money) as total_revenue
+FROM coffee_sales;
+
+SELECT 
+  (SUM(money) / COUNT(DISTINCT date))::NUMERIC(10,2) AS avg_money_per_day
+FROM coffee_sales;
+
+SELECT 
+  DATE_TRUNC('month', datetime::TIMESTAMP) as month,
+  SUM(money) as monthly_revenue
+FROM coffee_sales
+GROUP BY month
+ORDER BY month;
+
+SELECT 
+  coffee_name,
+  SUM(money) as total_revenue
+FROM coffee_sales
+GROUP BY coffee_name
+ORDER BY total_revenue DESC
+LIMIT 1;
+
+SELECT 
+  coffee_name,
+  COUNT(*) as quantity_sold,
+  SUM(money) as total_revenue
+FROM coffee_sales
+GROUP BY coffee_name
+ORDER BY total_revenue DESC
+LIMIT 5;
+
+SELECT 
+  ROUND(AVG(money)::NUMERIC, 2) as total_revenue
+FROM coffee_sales;
+
+SELECT 
+  TO_CHAR(TO_DATE(date, 'YYYY-MM-DD'), 'Day') as day_name,
+  SUM(money) as total_revenue,
+  COUNT(*) as number_of_sales
+FROM coffee_sales
+GROUP BY day_name
+ORDER BY total_revenue DESC;
+
+SELECT 
+  EXTRACT(HOUR FROM TO_TIMESTAMP(datetime, 'YYYY-MM-DD HH24:MI:SS')) as hour_of_day,
+  COUNT(*) as number_of_transactions,
+  SUM(money) as total_revenue
+FROM coffee_sales
+GROUP BY hour_of_day
+ORDER BY number_of_transactions DESC;
+
+SELECT 
+  cash_type,
+  COUNT(*) as transaction_count,
+  SUM(money) as total_revenue
+FROM coffee_sales
+GROUP BY cash_type
+ORDER BY transaction_count DESC;
+
+SELECT 
+  card as customer_id,
+  SUM(money) as total_spent,
+  COUNT(*) as total_purchases
+FROM coffee_sales
+WHERE card != ''  -- Exclude cash transactions
+GROUP BY card
+ORDER BY total_spent DESC
+LIMIT 10;
