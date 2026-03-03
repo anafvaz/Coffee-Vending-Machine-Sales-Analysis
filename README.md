@@ -1,7 +1,7 @@
 # Coffee-Vending-Machine-Sales-Analysis
 
 ## Overview
-This project analyzes one year of coffee vending machine transactions to understand which products drive revenue, when demand is highest, and how purchasing habits change over time. I used PostgreSQL to clean and explore the data, then built a Tableau dashboard that summarizes product performance, seasonality, peak purchase times, and payment behavior.
+This project analyzes one year of coffee vending machine transactions to understand which products drive revenue, when demand is highest, and how purchasing habits change over time. I used PostgreSQL to clean and explore the data, then built a Tableau dashboard that summarizes product performance, peak purchase times, and payment behavior.
 
 The result is a set of clear, actionable recommendations a vending operator could use to plan inventory, schedule maintenance around peak hours, and identify opportunities to improve revenue.
 
