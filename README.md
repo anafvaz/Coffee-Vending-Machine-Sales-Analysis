@@ -20,25 +20,20 @@ The result is a set of clear, actionable recommendations a vending operator coul
 
 Milk-based drinks dominate: Latte, Americano with Milk, and Cappuccino contribute the largest share of revenue. Hot Chocolate also ranks highly, indicating non-coffee demand and supporting a broader product mix.
 
-### 2. Monthly Revenue Patterns
 
-The machine generated a total of ₴115,431 over the period analyzed. Monthly revenue remained fairly stable overall, but there were noticeable increases during winter months. These spikes likely relate to colder weather or higher customer activity during the holiday and early spring seasons.
-
-This trend indicates that sales are somewhat seasonal, and revenue could be maximized by running promotions or increasing stock during colder months.
-
-### 3. Day-of-Week Performance
+### 2. Day-of-Week Performance
 
 Revenue is strongest on weekdays and weakest on Sunday, consistent with office traffic. This informs refill timing (e.g., stock up before Monday morning).
 
-### 4. Peak Hours of the Day
+### 3. Peak Hours of the Day
 
 Purchases peak in the morning (8–10 a.m.), with a smaller late-afternoon bump (~4 p.m.). This supports scheduling refills and maintenance outside peak windows to avoid lost sales.
 
-### 5. Payment Method Preferences 
+### 4. Payment Method Preferences 
 
 Card accounts for ~97% of transactions. Cash usage is minimal, which supports prioritizing digital payment reliability and reducing operational focus on cash handling.
 
-### 6. Seasonality in Monthly Revenue
+### 5. Seasonality in Monthly Revenue
 
 Monthly revenue is mostly stable with a few short spikes. These peaks would be worth investigating (e.g., location traffic, machine availability, or pricing changes) before making operational decisions.
 
