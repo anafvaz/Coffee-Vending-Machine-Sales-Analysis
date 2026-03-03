@@ -33,7 +33,7 @@ Purchases peak in the morning (8–10 a.m.), with a smaller late-afternoon bump 
 
 Card accounts for ~97% of transactions. Cash usage is minimal, which supports prioritizing digital payment reliability and reducing operational focus on cash handling.
 
-### 5. Seasonality in Monthly Revenue
+### 5. Monthly Revenue
 
 Monthly revenue is mostly stable with a few short spikes. These peaks would be worth investigating (e.g., location traffic, machine availability, or pricing changes) before making operational decisions.
 
@@ -41,8 +41,8 @@ Monthly revenue is mostly stable with a few short spikes. These peaks would be w
 ## Recommendations 
 
 - Prioritize inventory for top milk-based drinks + hot chocolate to reduce stock-outs.
-- Schedule restocking before peak periods (especially Monday/Tuesday mornings).
-- Increase inventory/promotions during high-demand months.
+- Schedule restocking before peak periods (especially weekdays mornings).
+- Increase inventory/promotions during high-demand periods.
 - Keep card payments highly reliable.
 
 
